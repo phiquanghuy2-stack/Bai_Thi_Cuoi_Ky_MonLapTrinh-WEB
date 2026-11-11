@@ -17,7 +17,7 @@ const register = async (req, res, next) => {
   try {
     const { name, email, password, phone } = req.body;
 
-    if (!name || !email || !password || !phone) {
+    if (![name, email, password, phone].every((v) => typeof v === 'string' && v.trim())) {
       return next(new AppError('Vui lòng điền đầy đủ họ tên, email, mật khẩu và số điện thoại!', 400));
     }
 
@@ -65,7 +65,7 @@ const login = async (req, res, next) => {
     const { email, password } = req.body;
 
     // Kiểm tra dữ liệu đầu vào
-    if (!email || !password) {
+    if (typeof email !== 'string' || typeof password !== 'string' || !email.trim() || !password) {
       return next(new AppError('Vui lòng nhập đầy đủ email và mật khẩu!', 400));
     }
 

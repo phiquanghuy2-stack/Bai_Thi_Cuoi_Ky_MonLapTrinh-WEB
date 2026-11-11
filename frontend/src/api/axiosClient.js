@@ -28,12 +28,10 @@ axiosClient.interceptors.response.use(
   (error) => {
     if (error.response?.status === 401) {
       const currentPath = window.location.pathname;
-      // Chỉ clear token nếu không phải trang đăng nhập/đăng ký
-      if (!currentPath.startsWith('/login') && !currentPath.startsWith('/register')) {
-        // Token đã hết hạn hoặc không hợp lệ - xóa khỏi storage
+      // Chỉ đá về /login khi đang ở trang cần đăng nhập; khách ở trang chủ thì để yên
+      if (currentPath.startsWith('/admin') || currentPath.startsWith('/tenant')) {
         localStorage.removeItem('smartmotel_token');
         localStorage.removeItem('smartmotel_user');
-        // Chuyển về trang đăng nhập
         window.location.href = '/login';
       }
     }

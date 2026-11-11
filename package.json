@@ -1,0 +1,11 @@
+{
+  "name": "hva-homestay-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hệ thống Quản lý Nhà trọ & Căn hộ dịch vụ HVA HOMESTAY (MERN Stack)",
+  "scripts": {
+    "dev": "node start-dev.js",
+    "seed": "npm --prefix backend run seed",
+    "install-all": "npm --prefix backend install && npm --prefix frontend install"
+  }
+}

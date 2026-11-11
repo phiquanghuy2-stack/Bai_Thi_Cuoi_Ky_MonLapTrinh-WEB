@@ -44,41 +44,33 @@ export const AuthProvider = ({ children }) => {
   }, [refreshProfile]);
 
   const login = useCallback(async (email, password) => {
-    try {
-      const response = await axiosClient.post('/auth/login', {
-        email: email.trim().toLowerCase(),
-        password,
-      });
-      const { user: loggedInUser, token: jwtToken } = response.data.data;
+    const response = await axiosClient.post('/auth/login', {
+      email: email.trim().toLowerCase(),
+      password,
+    });
+    const { user: loggedInUser, token: jwtToken } = response.data.data;
 
-      localStorage.setItem('smartmotel_token', jwtToken);
-      localStorage.setItem('smartmotel_user', JSON.stringify(loggedInUser));
-      setToken(jwtToken);
-      setUser(loggedInUser);
+    localStorage.setItem('smartmotel_token', jwtToken);
+    localStorage.setItem('smartmotel_user', JSON.stringify(loggedInUser));
+    setToken(jwtToken);
+    setUser(loggedInUser);
 
-      return loggedInUser;
-    } catch (error) {
-      throw error;
-    }
+    return loggedInUser;
   }, []);
 
   const register = useCallback(async (payload) => {
-    try {
-      const response = await axiosClient.post('/auth/register', {
-        ...payload,
-        email: payload.email.trim().toLowerCase(),
-      });
-      const { user: newUser, token: jwtToken } = response.data.data;
+    const response = await axiosClient.post('/auth/register', {
+      ...payload,
+      email: payload.email.trim().toLowerCase(),
+    });
+    const { user: newUser, token: jwtToken } = response.data.data;
 
-      localStorage.setItem('smartmotel_token', jwtToken);
-      localStorage.setItem('smartmotel_user', JSON.stringify(newUser));
-      setToken(jwtToken);
-      setUser(newUser);
+    localStorage.setItem('smartmotel_token', jwtToken);
+    localStorage.setItem('smartmotel_user', JSON.stringify(newUser));
+    setToken(jwtToken);
+    setUser(newUser);
 
-      return newUser;
-    } catch (error) {
-      throw error;
-    }
+    return newUser;
   }, []);
 
   const logout = useCallback(() => {

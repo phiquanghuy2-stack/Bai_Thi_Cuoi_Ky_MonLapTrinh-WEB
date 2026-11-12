@@ -70,7 +70,7 @@ const RoomFilterBar = ({
           </div>
 
           {/* 2. Khoảng giá thuê */}
-          <div className="lg:col-span-3 px-4 py-2.5 hover:bg-neutral-100/80 transition-colors">
+          <div className="lg:col-span-3 px-4 py-2.5 rounded-full hover:bg-neutral-100/80 transition-colors">
             <label className="block text-[11px] font-extrabold tracking-tight text-neutral-900">
               Khoảng giá (VNĐ/tháng)
             </label>
@@ -96,7 +96,7 @@ const RoomFilterBar = ({
           </div>
 
           {/* 3. Diện tích & Trạng thái */}
-          <div className="lg:col-span-2 px-4 py-2.5 hover:bg-neutral-100/80 transition-colors">
+          <div className="lg:col-span-2 px-4 py-2.5 rounded-full hover:bg-neutral-100/80 transition-colors">
             <label className="block text-[11px] font-extrabold tracking-tight text-neutral-900">
               {showStatusFilter ? 'Trạng thái' : 'Diện tích tối thiểu'}
             </label>

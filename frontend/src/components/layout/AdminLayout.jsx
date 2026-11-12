@@ -64,7 +64,8 @@ const AdminLayout = () => {
   return (
     <div className="min-h-screen flex flex-col lg:flex-row bg-[#F7F7F7] text-[#222222]">
       <aside className="w-full lg:w-72 bg-white border-b lg:border-b-0 lg:border-r border-neutral-200 flex flex-col justify-between shrink-0 lg:sticky lg:top-0 lg:h-screen">
-        <div>
+        {/* Phần trên tự cuộn khi màn hình thấp, để nút "Về trang chủ" & "Đăng xuất" luôn hiển thị */}
+        <div className="lg:flex-1 lg:min-h-0 lg:overflow-y-auto">
           <div className="h-20 px-6 flex items-center justify-between border-b border-neutral-100">
             <BrandLogo to="/admin/dashboard" size="sm" />
             <span className="text-[11px] font-bold px-2.5 py-1 rounded-full bg-rose-50 text-[#FA5252] border border-rose-200">
@@ -113,7 +114,7 @@ const AdminLayout = () => {
           </div>
         </div>
 
-        <div className="p-4 border-t border-neutral-200 space-y-2">
+        <div className="shrink-0 p-4 border-t border-neutral-200 space-y-2 bg-white">
           <Link
             to="/"
             className="w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl border border-neutral-300 hover:bg-neutral-50 text-xs font-bold text-neutral-700 transition-colors"

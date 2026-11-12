@@ -17,6 +17,18 @@ const PublicLayout = () => {
     }
   };
 
+  // Xác định mục menu đang được chọn để làm nổi bật (in đậm + gạch chân)
+  const isElectricityActive = location.pathname === '/' && location.hash === '#electricity-tiers';
+  const isHomeActive = location.pathname === '/' && !isElectricityActive;
+  const isPortalActive = ['/login', '/register'].includes(location.pathname);
+
+  const navClass = (active) =>
+    `flex items-center gap-2 py-2 border-b-2 transition-colors ${
+      active
+        ? 'border-neutral-900 text-neutral-900 font-bold'
+        : 'border-transparent hover:text-neutral-800 hover:border-neutral-300'
+    }`;
+
   return (
     <div className="min-h-screen flex flex-col bg-white text-[#222222]">
       {/* Header HVA HOMESTAY phong cách Airbnb */}
@@ -34,25 +46,21 @@ const PublicLayout = () => {
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-neutral-500">
             <Link
               to="/"
-              className={`flex items-center gap-2 py-2 border-b-2 transition-colors ${
-                location.pathname === '/'
-                  ? 'border-neutral-900 text-neutral-900 font-bold'
-                  : 'border-transparent hover:text-neutral-800'
-              }`}
+              className={navClass(isHomeActive)}
             >
               <span className="text-lg">🏡</span>
               Phòng & Homestay
             </Link>
             <a
               href="/#electricity-tiers"
-              className="flex items-center gap-2 py-2 border-b-2 border-transparent hover:text-neutral-800 transition-colors"
+              className={navClass(isElectricityActive)}
             >
               <span className="text-lg">⚡</span>
               Điện bậc thang
             </a>
             <Link
               to="/login"
-              className="flex items-center gap-2 py-2 border-b-2 border-transparent hover:text-neutral-800 transition-colors"
+              className={navClass(isPortalActive)}
             >
               <span className="text-lg">🛎️</span>
               Cổng cư dân

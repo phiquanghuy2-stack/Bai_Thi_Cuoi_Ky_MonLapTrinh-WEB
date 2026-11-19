@@ -3,13 +3,14 @@ const path = require('path');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
+const { ensureSampleData } = require('./utils/sampleData');
 const { notFound, errorHandler } = require('./middlewares/errorMiddleware');
 
 // Load biến môi trường từ .env
 dotenv.config();
 
-// Kết nối MongoDB
-connectDB();
+// Kết nối MongoDB, rồi nạp ảnh + dữ liệu mẫu từ backend/data nếu DB còn thiếu
+connectDB().then(ensureSampleData);
 
 const app = express();
 
@@ -37,6 +38,7 @@ app.use('/api/contracts', require('./routes/contractRoutes'));
 app.use('/api/repair-requests', require('./routes/repairRequestRoutes'));
 app.use('/api/invoices', require('./routes/invoiceRoutes'));
 app.use('/api/dashboard', require('./routes/dashboardRoutes'));
+app.use('/api/images', require('./routes/imageRoutes'));
 
 // Middleware bắt lỗi 404 và xử lý lỗi tập trung (BẮT BUỘC)
 app.use(notFound);

@@ -1,0 +1,137 @@
+[
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de081"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de069"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de05f"
+    },
+    "startDate": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "endDate": {
+      "$date": "2027-01-01T00:00:00Z"
+    },
+    "deposit": 3200000,
+    "status": "Hiệu lực",
+    "notes": "Hợp đồng thuê 12 tháng, đóng tiền từ ngày 01 - 05 hàng tháng.",
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.035Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.035Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de083"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06a"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de060"
+    },
+    "startDate": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "endDate": {
+      "$date": "2027-01-01T00:00:00Z"
+    },
+    "deposit": 3500000,
+    "status": "Hiệu lực",
+    "notes": "Hợp đồng thuê 12 tháng, đóng tiền từ ngày 01 - 05 hàng tháng.",
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.036Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.036Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de085"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06d"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de061"
+    },
+    "startDate": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "endDate": {
+      "$date": "2027-01-01T00:00:00Z"
+    },
+    "deposit": 3800000,
+    "status": "Hiệu lực",
+    "notes": "Hợp đồng thuê 12 tháng, đóng tiền từ ngày 01 - 05 hàng tháng.",
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.037Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.037Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de087"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06e"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de062"
+    },
+    "startDate": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "endDate": {
+      "$date": "2027-01-01T00:00:00Z"
+    },
+    "deposit": 3300000,
+    "status": "Hiệu lực",
+    "notes": "Hợp đồng thuê 12 tháng, đóng tiền từ ngày 01 - 05 hàng tháng.",
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.038Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.038Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de089"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de070"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de063"
+    },
+    "startDate": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "endDate": {
+      "$date": "2027-01-01T00:00:00Z"
+    },
+    "deposit": 4200000,
+    "status": "Hiệu lực",
+    "notes": "Hợp đồng thuê 12 tháng, đóng tiền từ ngày 01 - 05 hàng tháng.",
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.038Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.038Z"
+    },
+    "__v": 0
+  }
+]

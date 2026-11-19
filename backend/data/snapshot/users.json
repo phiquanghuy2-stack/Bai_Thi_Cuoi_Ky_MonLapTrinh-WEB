@@ -1,0 +1,110 @@
+[
+  {
+    "_id": {
+      "$oid": "6af4a65ab59028512d2de05d"
+    },
+    "name": "Ban Quản Lý HVA HOMESTAY",
+    "email": "admin@nhatro.vn",
+    "password": "$2a$10$FkgL0DXwFEOMa5Zd1ROPPur2xaiP1lW/vWy8mvRiAtehyU9CCaHvW",
+    "role": "admin",
+    "phone": "0988888888",
+    "avatar": "",
+    "createdAt": {
+      "$date": "2026-11-11T17:31:06.643Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:06.643Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65ab59028512d2de05f"
+    },
+    "name": "Trần Minh Tuấn",
+    "email": "tuan@gmail.com",
+    "password": "$2a$10$zql0ST31mlpaTBauunInpurDnzqCmlOzzzZP2cNBg4etxC/wbWp3K",
+    "role": "tenant",
+    "phone": "0912345671",
+    "avatar": "",
+    "createdAt": {
+      "$date": "2026-11-11T17:31:06.728Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:06.728Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65ab59028512d2de060"
+    },
+    "name": "Lê Thị Hương",
+    "email": "huong@gmail.com",
+    "password": "$2a$10$n54NZo96aCsiv/wL6cvvqOe0NzMha.0zx68lvhEYAKRMX4yVo8rxi",
+    "role": "tenant",
+    "phone": "0912345672",
+    "avatar": "",
+    "createdAt": {
+      "$date": "2026-11-11T17:31:06.728Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:06.728Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65ab59028512d2de061"
+    },
+    "name": "Phạm Quốc Bảo",
+    "email": "bao@gmail.com",
+    "password": "$2a$10$hnTUey9eh8BRpWLjY1tOm.eG1s4zu02Bx5OFKPRlqoxziDPoHdhge",
+    "role": "tenant",
+    "phone": "0912345673",
+    "avatar": "",
+    "createdAt": {
+      "$date": "2026-11-11T17:31:06.728Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:06.728Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65ab59028512d2de062"
+    },
+    "name": "Hoàng Ngọc Ánh",
+    "email": "anh@gmail.com",
+    "password": "$2a$10$uItIGOSpoMRkHguI4v0jpuPF2HBOJXFNdftm5cUQhMS5PvLDGFCfW",
+    "role": "tenant",
+    "phone": "0912345674",
+    "avatar": "",
+    "createdAt": {
+      "$date": "2026-11-11T17:31:06.728Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:06.728Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65ab59028512d2de063"
+    },
+    "name": "Vũ Đức Thắng",
+    "email": "thang@gmail.com",
+    "password": "$2a$10$SZvcRyIshHJqm4mD3xqN0uP4ceuF0g5Awp5CAjHsXeeOO8bp2h7EK",
+    "role": "tenant",
+    "phone": "0912345675",
+    "avatar": "",
+    "createdAt": {
+      "$date": "2026-11-11T17:31:06.728Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:06.728Z"
+    },
+    "__v": 0
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0c3"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de05f"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de069"
+    },
+    "title": "Điều hòa không mát, có tiếng kêu ở dàn lạnh",
+    "description": "Điều hòa phòng P101 bật 18 độ nhưng chỉ thổi gió thường, cần thợ kiểm tra nạp gas hoặc vệ sinh.",
+    "images": [],
+    "status": "Mới",
+    "adminNote": "",
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.065Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.065Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0c4"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de060"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06a"
+    },
+    "title": "Vòi nước bồn rửa bát bị rò nước ở khớp nối",
+    "description": "Nước rỉ nhỏ giọt dưới gầm tủ bếp, nhờ chủ trọ cho người thay gioăng cao su.",
+    "images": [],
+    "status": "Đang xử lý",
+    "adminNote": "Đã hẹn thợ điện nước chiều mai 15h qua thay vòi mới.",
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.065Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.065Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0c5"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de061"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06d"
+    },
+    "title": "Thay bóng đèn LED nhà tắm",
+    "description": "Bóng đèn ốp trần trong WC bị cháy.",
+    "images": [],
+    "status": "Xong",
+    "adminNote": "Đã thay bóng đèn Rạng Đông 18W mới.",
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.065Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.065Z"
+    },
+    "__v": 0
+  }
+]

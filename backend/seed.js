@@ -6,12 +6,17 @@ const Contract = require('./models/Contract');
 const Invoice = require('./models/Invoice');
 const RepairRequest = require('./models/RepairRequest');
 const { calculateInvoiceAmounts } = require('./utils/calcElectricity');
+const extraApartments = require('./data/apartments');
+const { importImages } = require('./utils/sampleData');
 
 dotenv.config();
 
 const seedData = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URI);
+
+    // Ảnh phòng (/api/images/...) được lưu trong MongoDB, nạp từ backend/data/images
+    await importImages();
     console.log('✅ Đã kết nối MongoDB để khởi tạo dữ liệu mẫu HVA HOMESTAY...');
 
     await Promise.all([
@@ -86,11 +91,11 @@ const seedData = async () => {
         description:
           'Căn hộ Studio thiết kế tối giản phong cách Bắc Âu, cửa sổ kính lớn đón ánh sáng tự nhiên cả ngày. Trang bị sẵn điều hòa Inverter tiết kiệm điện, giường gỗ sồi, nệm cao su non, tủ quần áo âm tường và khu bếp nấu riêng biệt có máy hút mùi.',
         images: [
-          'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1522708323590-d24dbb6b0267.jpg',
+          '/api/images/1502672260266-1c1ef2d93688.jpg',
+          '/api/images/1556911220-bff31c812dba.jpg',
+          '/api/images/1584622650111-993a426fbf0a.jpg',
+          '/api/images/1513694203232-719a280e022f.jpg',
         ],
         lastElecIndex: 1280,
         lastWaterIndex: 115,
@@ -111,11 +116,11 @@ const seedData = async () => {
         description:
           'Căn góc 2 mặt thoáng cực kỳ mát mẻ, đối diện công viên Cầu Giấy. Bàn giao full nội thất cao cấp: sofa dài, tivi thông minh, tủ lạnh 2 cánh, máy giặt lồng ngang riêng trên ban công và khóa vân tay an toàn tuyệt đối.',
         images: [
-          'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1502672260266-1c1ef2d93688.jpg',
+          '/api/images/1560448204-e02f11c3d0e2.jpg',
+          '/api/images/1556909114-f6e7ad7d3136.jpg',
+          '/api/images/1552321554-5fefe8c9ef14.jpg',
+          '/api/images/1493809842364-78817add7ffb.jpg',
         ],
         lastElecIndex: 960,
         lastWaterIndex: 88,
@@ -136,11 +141,11 @@ const seedData = async () => {
         description:
           'Chỉ 5 phút đi bộ ra biển Mỹ Khê. Phòng thiết kế gam màu vàng kem ấm áp, trang bị đầy đủ giường nệm êm ái, bàn làm việc nhìn ra cửa sổ lớn, khu vực bếp lát gạch bông cổ điển và nhà vệ sinh khép kín có vách kính tắm đứng.',
         images: [
-          'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1560448204-e02f11c3d0e2.jpg',
+          '/api/images/1522708323590-d24dbb6b0267.jpg',
+          '/api/images/1505693416388-ac5ce068fe85.jpg',
+          '/api/images/1556911220-bff31c812dba.jpg',
+          '/api/images/1584622650111-993a426fbf0a.jpg',
         ],
         lastElecIndex: 420,
         lastWaterIndex: 45,
@@ -161,11 +166,11 @@ const seedData = async () => {
         description:
           'Căn hộ Duplex trần cao 4.5m với gác lửng gỗ sang trọng tách biệt hoàn toàn không gian ngủ và phòng khách bên dưới. Nằm ngay trung tâm khu phố An Thượng - Mỹ An sầm uất, yên tĩnh, an ninh thẻ từ thang máy.',
         images: [
-          'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1536376072261-38c75010e6c9.jpg',
+          '/api/images/1493809842364-78817add7ffb.jpg',
+          '/api/images/1554995207-c18c203602cb.jpg',
+          '/api/images/1556909114-f6e7ad7d3136.jpg',
+          '/api/images/1552321554-5fefe8c9ef14.jpg',
         ],
         lastElecIndex: 210,
         lastWaterIndex: 25,
@@ -186,11 +191,11 @@ const seedData = async () => {
         description:
           'Căn hộ dịch vụ cao cấp trung tâm Thái Hà - Đống Đa. Trang bị đầy đủ từ A-Z: Smart TV 50 inch, tủ lạnh Inverter, máy giặt sấy riêng, bàn ăn mặt đá, hệ thống lọc nước uống trực tiếp tại vòi.',
         images: [
-          'https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1493809842364-78817add7ffb.jpg',
+          '/api/images/1522708323590-d24dbb6b0267.jpg',
+          '/api/images/1502672260266-1c1ef2d93688.jpg',
+          '/api/images/1556911220-bff31c812dba.jpg',
+          '/api/images/1584622650111-993a426fbf0a.jpg',
         ],
         lastElecIndex: 1540,
         lastWaterIndex: 132,
@@ -211,11 +216,11 @@ const seedData = async () => {
         description:
           'Phòng có gác lửng rộng 10m2, cửa sổ lớn đón nắng tự nhiên, cách ga tàu điện trên cao 200m.',
         images: [
-          'https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1554995207-c18c203602cb.jpg',
+          '/api/images/1536376072261-38c75010e6c9.jpg',
+          '/api/images/1505693416388-ac5ce068fe85.jpg',
+          '/api/images/1556911220-bff31c812dba.jpg',
+          '/api/images/1552321554-5fefe8c9ef14.jpg',
         ],
         lastElecIndex: 810,
         lastWaterIndex: 74,
@@ -236,11 +241,11 @@ const seedData = async () => {
         description:
           'Phòng mới hoàn thiện 100% tại phố Trung Kính - Cầu Giấy. Có ban công riêng trồng cây xanh và phơi đồ thoáng gió, nhà vệ sinh trang bị thiết bị Inax cao cấp, khóa cửa vân tay và chỗ để xe tầng 1 miễn phí.',
         images: [
-          'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1598928506311-c55ded91a20c.jpg',
+          '/api/images/1522708323590-d24dbb6b0267.jpg',
+          '/api/images/1502672260266-1c1ef2d93688.jpg',
+          '/api/images/1556909114-f6e7ad7d3136.jpg',
+          '/api/images/1584622650111-993a426fbf0a.jpg',
         ],
         lastElecIndex: 310,
         lastWaterIndex: 30,
@@ -261,11 +266,11 @@ const seedData = async () => {
         description:
           'Căn hộ diện tích lớn 35m2 có sân thượng uống trà nhìn ra Hồ Tây. Trang bị nội thất nhập khẩu, bồn tắm nằm thư giãn.',
         images: [
-          'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1512918728675-ed5a9ecdebfd.jpg',
+          '/api/images/1502672260266-1c1ef2d93688.jpg',
+          '/api/images/1493809842364-78817add7ffb.jpg',
+          '/api/images/1556911220-bff31c812dba.jpg',
+          '/api/images/1552321554-5fefe8c9ef14.jpg',
         ],
         lastElecIndex: 1890,
         lastWaterIndex: 164,
@@ -286,11 +291,11 @@ const seedData = async () => {
         description:
           'Phòng đơn gọn gàng, sạch sẽ, cực kỳ phù hợp cho sinh viên hoặc người đi làm cần không gian yên tĩnh. Giờ giấc tự do 24/24, điện nước tính chuẩn giá bậc thang nhà nước.',
         images: [
-          'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1505693416388-ac5ce068fe85.jpg',
+          '/api/images/1560448204-e02f11c3d0e2.jpg',
+          '/api/images/1513694203232-719a280e022f.jpg',
+          '/api/images/1556911220-bff31c812dba.jpg',
+          '/api/images/1584622650111-993a426fbf0a.jpg',
         ],
         lastElecIndex: 150,
         lastWaterIndex: 20,
@@ -311,11 +316,11 @@ const seedData = async () => {
         description:
           'Căn hộ dịch vụ ngay sát Landmark 81, di chuyển sang Quận 1 chỉ 5 phút. Nội thất gỗ ấm cúng, có sofa tiếp khách, kệ bếp rộng rãi và cửa sổ kính cách âm tuyệt đối.',
         images: [
-          'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1484154218962-a197022b5858.jpg',
+          '/api/images/1522708323590-d24dbb6b0267.jpg',
+          '/api/images/1502672260266-1c1ef2d93688.jpg',
+          '/api/images/1556909114-f6e7ad7d3136.jpg',
+          '/api/images/1552321554-5fefe8c9ef14.jpg',
         ],
         lastElecIndex: 500,
         lastWaterIndex: 52,
@@ -336,11 +341,11 @@ const seedData = async () => {
         description:
           'Căn hộ ngay phố Chùa Láng, gần ĐH Ngoại Thương và Học viện Ngoại Giao. Không gian sáng sủa, ban công hướng Đông Nam mát mẻ quanh năm.',
         images: [
-          'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1513694203232-719a280e022f.jpg',
+          '/api/images/1560448204-e02f11c3d0e2.jpg',
+          '/api/images/1598928506311-c55ded91a20c.jpg',
+          '/api/images/1556911220-bff31c812dba.jpg',
+          '/api/images/1584622650111-993a426fbf0a.jpg',
         ],
         lastElecIndex: 260,
         lastWaterIndex: 31,
@@ -361,7 +366,7 @@ const seedData = async () => {
         description:
           'Đang nâng cấp sàn gỗ xương cá và bảo dưỡng định kỳ hệ thống điều hòa trung tâm.',
         images: [
-          'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=85',
+          '/api/images/1556911220-bff31c812dba.jpg',
         ],
         lastElecIndex: 600,
         lastWaterIndex: 60,
@@ -382,11 +387,11 @@ const seedData = async () => {
         description:
           'Phòng studio nhỏ gọn cách ĐH Quốc Gia và ĐH Sư Phạm 5 phút đi bộ. Có giường, tủ, bàn học, bếp mini và WC khép kín. Phù hợp cho sinh viên, giờ giấc tự do, có chỗ để xe miễn phí.',
         images: [
-          'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1560448204-e02f11c3d0e2.jpg',
+          '/api/images/1522708323590-d24dbb6b0267.jpg',
+          '/api/images/1505693416388-ac5ce068fe85.jpg',
+          '/api/images/1556911220-bff31c812dba.jpg',
+          '/api/images/1584622650111-993a426fbf0a.jpg',
         ],
         lastElecIndex: 180,
         lastWaterIndex: 22,
@@ -407,11 +412,11 @@ const seedData = async () => {
         description:
           'Căn hộ giữa lòng phố cổ, đi bộ 3 phút ra Hồ Gươm. Ban công rộng nhìn xuống phố, nội thất gỗ ấm cúng, điều hòa 2 chiều, máy giặt riêng và khóa vân tay an toàn.',
         images: [
-          'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1513694203232-719a280e022f.jpg',
+          '/api/images/1502672260266-1c1ef2d93688.jpg',
+          '/api/images/1598928506311-c55ded91a20c.jpg',
+          '/api/images/1556909114-f6e7ad7d3136.jpg',
+          '/api/images/1552321554-5fefe8c9ef14.jpg',
         ],
         lastElecIndex: 340,
         lastWaterIndex: 36,
@@ -432,11 +437,11 @@ const seedData = async () => {
         description:
           'Phòng duplex có gác gỗ chắc chắn để ngủ, tầng dưới làm phòng khách và bếp. Gần Times City và ĐH Kinh tế Quốc dân, khu dân cư yên tĩnh, an ninh tốt.',
         images: [
-          'https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1554995207-c18c203602cb.jpg',
+          '/api/images/1536376072261-38c75010e6c9.jpg',
+          '/api/images/1505693416388-ac5ce068fe85.jpg',
+          '/api/images/1556911220-bff31c812dba.jpg',
+          '/api/images/1552321554-5fefe8c9ef14.jpg',
         ],
         lastElecIndex: 270,
         lastWaterIndex: 29,
@@ -457,11 +462,11 @@ const seedData = async () => {
         description:
           'Căn hộ tầng cao nhìn thẳng ra sông Hàn và cầu Rồng. Bàn giao đầy đủ sofa, Smart TV, tủ lạnh, máy giặt, bếp từ và máy lọc nước. Tối cuối tuần ngắm cầu Rồng phun lửa ngay từ cửa sổ.',
         images: [
-          'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1512918728675-ed5a9ecdebfd.jpg',
+          '/api/images/1493809842364-78817add7ffb.jpg',
+          '/api/images/1502672260266-1c1ef2d93688.jpg',
+          '/api/images/1556911220-bff31c812dba.jpg',
+          '/api/images/1584622650111-993a426fbf0a.jpg',
         ],
         lastElecIndex: 390,
         lastWaterIndex: 41,
@@ -482,11 +487,11 @@ const seedData = async () => {
         description:
           'Phòng studio giá mềm trong hẻm yên tĩnh, gần chợ và siêu thị. Có cửa sổ thoáng, điều hòa, nóng lạnh và kệ bếp riêng. Thích hợp cho người đi làm muốn tiết kiệm chi phí.',
         images: [
-          'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1505693416388-ac5ce068fe85.jpg',
+          '/api/images/1560448204-e02f11c3d0e2.jpg',
+          '/api/images/1513694203232-719a280e022f.jpg',
+          '/api/images/1556911220-bff31c812dba.jpg',
+          '/api/images/1584622650111-993a426fbf0a.jpg',
         ],
         lastElecIndex: 140,
         lastWaterIndex: 18,
@@ -507,11 +512,11 @@ const seedData = async () => {
         description:
           'Chỉ 2 phút đi bộ ra bãi biển Mỹ Khê. Ban công riêng đón gió biển, phòng ngủ cách âm tốt, bếp đầy đủ dụng cụ nấu ăn và khu phơi đồ thoáng mát.',
         images: [
-          'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1598928506311-c55ded91a20c.jpg',
+          '/api/images/1522708323590-d24dbb6b0267.jpg',
+          '/api/images/1502672260266-1c1ef2d93688.jpg',
+          '/api/images/1556909114-f6e7ad7d3136.jpg',
+          '/api/images/1552321554-5fefe8c9ef14.jpg',
         ],
         lastElecIndex: 230,
         lastWaterIndex: 27,
@@ -532,11 +537,11 @@ const seedData = async () => {
         description:
           'Căn duplex trần cao, gác ngủ riêng tư, tầng dưới có sofa và bàn làm việc. Nằm ngay trung tâm Quận 3, gần Hồ Con Rùa và nhiều quán cà phê, di chuyển sang Quận 1 rất nhanh.',
         images: [
-          'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1536376072261-38c75010e6c9.jpg',
+          '/api/images/1554995207-c18c203602cb.jpg',
+          '/api/images/1493809842364-78817add7ffb.jpg',
+          '/api/images/1556909114-f6e7ad7d3136.jpg',
+          '/api/images/1552321554-5fefe8c9ef14.jpg',
         ],
         lastElecIndex: 450,
         lastWaterIndex: 48,
@@ -557,11 +562,11 @@ const seedData = async () => {
         description:
           'Studio ngay trung tâm Quận 1, đi bộ 5 phút tới chợ Bến Thành và phố đi bộ Nguyễn Huệ. Nội thất mới, cửa kính cách âm, có thang máy và bảo vệ 24/7.',
         images: [
-          'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1484154218962-a197022b5858.jpg',
+          '/api/images/1522708323590-d24dbb6b0267.jpg',
+          '/api/images/1560448204-e02f11c3d0e2.jpg',
+          '/api/images/1556911220-bff31c812dba.jpg',
+          '/api/images/1584622650111-993a426fbf0a.jpg',
         ],
         lastElecIndex: 520,
         lastWaterIndex: 55,
@@ -582,11 +587,11 @@ const seedData = async () => {
         description:
           'Căn hộ rộng 38m2 trong khu Thảo Điền yên bình, nhiều cây xanh. Đầy đủ nội thất cao cấp: giường king size, sofa, Smart TV, máy giặt sấy và bếp đảo. Phù hợp gia đình nhỏ hoặc nhóm bạn.',
         images: [
-          'https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1493809842364-78817add7ffb.jpg',
+          '/api/images/1484154218962-a197022b5858.jpg',
+          '/api/images/1512918728675-ed5a9ecdebfd.jpg',
+          '/api/images/1556909114-f6e7ad7d3136.jpg',
+          '/api/images/1552321554-5fefe8c9ef14.jpg',
         ],
         lastElecIndex: 610,
         lastWaterIndex: 63,
@@ -607,15 +612,17 @@ const seedData = async () => {
         description:
           'Phòng đơn giá rẻ gần ĐH Hutech và ĐH Giao thông Vận tải. Sạch sẽ, có cửa sổ, điều hòa và WC riêng. Điện nước tính theo giá nhà nước, không phụ thu.',
         images: [
-          'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=85',
-          'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80',
+          '/api/images/1505693416388-ac5ce068fe85.jpg',
+          '/api/images/1513694203232-719a280e022f.jpg',
+          '/api/images/1560448204-e02f11c3d0e2.jpg',
+          '/api/images/1556911220-bff31c812dba.jpg',
+          '/api/images/1584622650111-993a426fbf0a.jpg',
         ],
         lastElecIndex: 120,
         lastWaterIndex: 15,
       },
+      // 20 căn hộ bổ sung P701 → P1104 (để cuối mảng để không lệch chỉ số rooms[i] bên dưới)
+      ...extraApartments,
     ]);
 
     const currentYear = new Date().getFullYear();

@@ -36,12 +36,12 @@ import {
 import { getImageUrl } from '../../api/axiosClient';
 
 const DEFAULT_GALLERY_FALLBACKS = [
-  'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1000&q=85',
-  'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
-];
+  '1522708323590-d24dbb6b0267',
+  '1502672260266-1c1ef2d93688',
+  '1556911220-bff31c812dba',
+  '1584622650111-993a426fbf0a',
+  '1513694203232-719a280e022f',
+].map((id) => getImageUrl(`/api/images/${id}.jpg`));
 
 /**
  * Trang Chi Tiết Phòng chuẩn Airbnb:

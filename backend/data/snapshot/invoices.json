@@ -1,0 +1,1644 @@
+[
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de090"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de069"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de05f"
+    },
+    "month": 1,
+    "year": 2026,
+    "oldElec": 200,
+    "newElec": 304,
+    "oldWater": 15,
+    "newWater": 20,
+    "roomPrice": 3200000,
+    "elecAmount": 192268,
+    "waterAmount": 75000,
+    "serviceFee": 100000,
+    "totalAmount": 3567268,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-01-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de091"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de069"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de05f"
+    },
+    "month": 2,
+    "year": 2026,
+    "oldElec": 304,
+    "newElec": 427,
+    "oldWater": 20,
+    "newWater": 26,
+    "roomPrice": 3200000,
+    "elecAmount": 233441,
+    "waterAmount": 90000,
+    "serviceFee": 100000,
+    "totalAmount": 3623441,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-02-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de092"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de069"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de05f"
+    },
+    "month": 3,
+    "year": 2026,
+    "oldElec": 427,
+    "newElec": 569,
+    "oldWater": 26,
+    "newWater": 33,
+    "roomPrice": 3200000,
+    "elecAmount": 274614,
+    "waterAmount": 105000,
+    "serviceFee": 100000,
+    "totalAmount": 3679614,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-03-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de093"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de069"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de05f"
+    },
+    "month": 4,
+    "year": 2026,
+    "oldElec": 569,
+    "newElec": 730,
+    "oldWater": 33,
+    "newWater": 41,
+    "roomPrice": 3200000,
+    "elecAmount": 315787,
+    "waterAmount": 120000,
+    "serviceFee": 100000,
+    "totalAmount": 3735787,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-04-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de094"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de069"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de05f"
+    },
+    "month": 5,
+    "year": 2026,
+    "oldElec": 730,
+    "newElec": 910,
+    "oldWater": 41,
+    "newWater": 50,
+    "roomPrice": 3200000,
+    "elecAmount": 356960,
+    "waterAmount": 135000,
+    "serviceFee": 100000,
+    "totalAmount": 3791960,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-05-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de095"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de069"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de05f"
+    },
+    "month": 6,
+    "year": 2026,
+    "oldElec": 910,
+    "newElec": 1109,
+    "oldWater": 50,
+    "newWater": 54,
+    "roomPrice": 3200000,
+    "elecAmount": 398133,
+    "waterAmount": 60000,
+    "serviceFee": 100000,
+    "totalAmount": 3758133,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-06-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de096"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de069"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de05f"
+    },
+    "month": 7,
+    "year": 2026,
+    "oldElec": 1109,
+    "newElec": 1327,
+    "oldWater": 54,
+    "newWater": 59,
+    "roomPrice": 3200000,
+    "elecAmount": 449422,
+    "waterAmount": 75000,
+    "serviceFee": 100000,
+    "totalAmount": 3824422,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-07-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de097"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de069"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de05f"
+    },
+    "month": 8,
+    "year": 2026,
+    "oldElec": 1327,
+    "newElec": 1564,
+    "oldWater": 59,
+    "newWater": 65,
+    "roomPrice": 3200000,
+    "elecAmount": 501273,
+    "waterAmount": 90000,
+    "serviceFee": 100000,
+    "totalAmount": 3891273,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-08-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de098"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de069"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de05f"
+    },
+    "month": 9,
+    "year": 2026,
+    "oldElec": 1564,
+    "newElec": 1820,
+    "oldWater": 65,
+    "newWater": 72,
+    "roomPrice": 3200000,
+    "elecAmount": 553124,
+    "waterAmount": 105000,
+    "serviceFee": 100000,
+    "totalAmount": 3958124,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-09-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de099"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de069"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de05f"
+    },
+    "month": 10,
+    "year": 2026,
+    "oldElec": 1820,
+    "newElec": 1915,
+    "oldWater": 72,
+    "newWater": 80,
+    "roomPrice": 3200000,
+    "elecAmount": 174270,
+    "waterAmount": 120000,
+    "serviceFee": 100000,
+    "totalAmount": 3594270,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-10-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de09a"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06a"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de060"
+    },
+    "month": 1,
+    "year": 2026,
+    "oldElec": 300,
+    "newElec": 431,
+    "oldWater": 20,
+    "newWater": 26,
+    "roomPrice": 3500000,
+    "elecAmount": 250777,
+    "waterAmount": 90000,
+    "serviceFee": 100000,
+    "totalAmount": 3940777,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-01-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de09b"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06a"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de060"
+    },
+    "month": 2,
+    "year": 2026,
+    "oldElec": 431,
+    "newElec": 581,
+    "oldWater": 26,
+    "newWater": 33,
+    "roomPrice": 3500000,
+    "elecAmount": 291950,
+    "waterAmount": 105000,
+    "serviceFee": 100000,
+    "totalAmount": 3996950,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-02-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de09c"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06a"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de060"
+    },
+    "month": 3,
+    "year": 2026,
+    "oldElec": 581,
+    "newElec": 750,
+    "oldWater": 33,
+    "newWater": 41,
+    "roomPrice": 3500000,
+    "elecAmount": 333123,
+    "waterAmount": 120000,
+    "serviceFee": 100000,
+    "totalAmount": 4053123,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-03-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de09d"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06a"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de060"
+    },
+    "month": 4,
+    "year": 2026,
+    "oldElec": 750,
+    "newElec": 938,
+    "oldWater": 41,
+    "newWater": 50,
+    "roomPrice": 3500000,
+    "elecAmount": 374296,
+    "waterAmount": 135000,
+    "serviceFee": 100000,
+    "totalAmount": 4109296,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-04-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de09e"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06a"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de060"
+    },
+    "month": 5,
+    "year": 2026,
+    "oldElec": 938,
+    "newElec": 1145,
+    "oldWater": 50,
+    "newWater": 54,
+    "roomPrice": 3500000,
+    "elecAmount": 419403,
+    "waterAmount": 60000,
+    "serviceFee": 100000,
+    "totalAmount": 4079403,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-05-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de09f"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06a"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de060"
+    },
+    "month": 6,
+    "year": 2026,
+    "oldElec": 1145,
+    "newElec": 1371,
+    "oldWater": 54,
+    "newWater": 59,
+    "roomPrice": 3500000,
+    "elecAmount": 471254,
+    "waterAmount": 75000,
+    "serviceFee": 100000,
+    "totalAmount": 4146254,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-06-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0a0"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06a"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de060"
+    },
+    "month": 7,
+    "year": 2026,
+    "oldElec": 1371,
+    "newElec": 1616,
+    "oldWater": 59,
+    "newWater": 65,
+    "roomPrice": 3500000,
+    "elecAmount": 523105,
+    "waterAmount": 90000,
+    "serviceFee": 100000,
+    "totalAmount": 4213105,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-07-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0a1"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06a"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de060"
+    },
+    "month": 8,
+    "year": 2026,
+    "oldElec": 1616,
+    "newElec": 1880,
+    "oldWater": 65,
+    "newWater": 72,
+    "roomPrice": 3500000,
+    "elecAmount": 574956,
+    "waterAmount": 105000,
+    "serviceFee": 100000,
+    "totalAmount": 4279956,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-08-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0a2"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06a"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de060"
+    },
+    "month": 9,
+    "year": 2026,
+    "oldElec": 1880,
+    "newElec": 1983,
+    "oldWater": 72,
+    "newWater": 80,
+    "roomPrice": 3500000,
+    "elecAmount": 190101,
+    "waterAmount": 120000,
+    "serviceFee": 100000,
+    "totalAmount": 3910101,
+    "status": "Chưa thanh toán",
+    "paidAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0a3"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06a"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de060"
+    },
+    "month": 10,
+    "year": 2026,
+    "oldElec": 1983,
+    "newElec": 2105,
+    "oldWater": 80,
+    "newWater": 89,
+    "roomPrice": 3500000,
+    "elecAmount": 231274,
+    "waterAmount": 135000,
+    "serviceFee": 100000,
+    "totalAmount": 3966274,
+    "status": "Chưa thanh toán",
+    "paidAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0a4"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06d"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de061"
+    },
+    "month": 1,
+    "year": 2026,
+    "oldElec": 400,
+    "newElec": 558,
+    "oldWater": 25,
+    "newWater": 32,
+    "roomPrice": 3800000,
+    "elecAmount": 309286,
+    "waterAmount": 105000,
+    "serviceFee": 100000,
+    "totalAmount": 4314286,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-01-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0a5"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06d"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de061"
+    },
+    "month": 2,
+    "year": 2026,
+    "oldElec": 558,
+    "newElec": 735,
+    "oldWater": 32,
+    "newWater": 40,
+    "roomPrice": 3800000,
+    "elecAmount": 350459,
+    "waterAmount": 120000,
+    "serviceFee": 100000,
+    "totalAmount": 4370459,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-02-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0a6"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06d"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de061"
+    },
+    "month": 3,
+    "year": 2026,
+    "oldElec": 735,
+    "newElec": 931,
+    "oldWater": 40,
+    "newWater": 49,
+    "roomPrice": 3800000,
+    "elecAmount": 391632,
+    "waterAmount": 135000,
+    "serviceFee": 100000,
+    "totalAmount": 4426632,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-03-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0a7"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06d"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de061"
+    },
+    "month": 4,
+    "year": 2026,
+    "oldElec": 931,
+    "newElec": 1146,
+    "oldWater": 49,
+    "newWater": 53,
+    "roomPrice": 3800000,
+    "elecAmount": 441235,
+    "waterAmount": 60000,
+    "serviceFee": 100000,
+    "totalAmount": 4401235,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-04-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0a8"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06d"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de061"
+    },
+    "month": 5,
+    "year": 2026,
+    "oldElec": 1146,
+    "newElec": 1380,
+    "oldWater": 53,
+    "newWater": 58,
+    "roomPrice": 3800000,
+    "elecAmount": 493086,
+    "waterAmount": 75000,
+    "serviceFee": 100000,
+    "totalAmount": 4468086,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-05-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0a9"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06d"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de061"
+    },
+    "month": 6,
+    "year": 2026,
+    "oldElec": 1380,
+    "newElec": 1633,
+    "oldWater": 58,
+    "newWater": 64,
+    "roomPrice": 3800000,
+    "elecAmount": 544937,
+    "waterAmount": 90000,
+    "serviceFee": 100000,
+    "totalAmount": 4534937,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-06-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0aa"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06d"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de061"
+    },
+    "month": 7,
+    "year": 2026,
+    "oldElec": 1633,
+    "newElec": 1725,
+    "oldWater": 64,
+    "newWater": 71,
+    "roomPrice": 3800000,
+    "elecAmount": 168672,
+    "waterAmount": 105000,
+    "serviceFee": 100000,
+    "totalAmount": 4173672,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-07-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0ab"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06d"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de061"
+    },
+    "month": 8,
+    "year": 2026,
+    "oldElec": 1725,
+    "newElec": 1836,
+    "oldWater": 71,
+    "newWater": 79,
+    "roomPrice": 3800000,
+    "elecAmount": 207437,
+    "waterAmount": 120000,
+    "serviceFee": 100000,
+    "totalAmount": 4227437,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-08-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0ac"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06d"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de061"
+    },
+    "month": 9,
+    "year": 2026,
+    "oldElec": 1836,
+    "newElec": 1966,
+    "oldWater": 79,
+    "newWater": 88,
+    "roomPrice": 3800000,
+    "elecAmount": 248610,
+    "waterAmount": 135000,
+    "serviceFee": 100000,
+    "totalAmount": 4283610,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-09-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0ad"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06d"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de061"
+    },
+    "month": 10,
+    "year": 2026,
+    "oldElec": 1966,
+    "newElec": 2115,
+    "oldWater": 88,
+    "newWater": 92,
+    "roomPrice": 3800000,
+    "elecAmount": 289783,
+    "waterAmount": 60000,
+    "serviceFee": 100000,
+    "totalAmount": 4249783,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-10-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0ae"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06e"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de062"
+    },
+    "month": 1,
+    "year": 2026,
+    "oldElec": 500,
+    "newElec": 685,
+    "oldWater": 30,
+    "newWater": 38,
+    "roomPrice": 3300000,
+    "elecAmount": 367795,
+    "waterAmount": 120000,
+    "serviceFee": 100000,
+    "totalAmount": 3887795,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-01-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0af"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06e"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de062"
+    },
+    "month": 2,
+    "year": 2026,
+    "oldElec": 685,
+    "newElec": 889,
+    "oldWater": 38,
+    "newWater": 47,
+    "roomPrice": 3300000,
+    "elecAmount": 411216,
+    "waterAmount": 135000,
+    "serviceFee": 100000,
+    "totalAmount": 3946216,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-02-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0b0"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06e"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de062"
+    },
+    "month": 3,
+    "year": 2026,
+    "oldElec": 889,
+    "newElec": 1112,
+    "oldWater": 47,
+    "newWater": 51,
+    "roomPrice": 3300000,
+    "elecAmount": 463067,
+    "waterAmount": 60000,
+    "serviceFee": 100000,
+    "totalAmount": 3923067,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-03-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0b1"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06e"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de062"
+    },
+    "month": 4,
+    "year": 2026,
+    "oldElec": 1112,
+    "newElec": 1354,
+    "oldWater": 51,
+    "newWater": 56,
+    "roomPrice": 3300000,
+    "elecAmount": 514918,
+    "waterAmount": 75000,
+    "serviceFee": 100000,
+    "totalAmount": 3989918,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-04-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0b2"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06e"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de062"
+    },
+    "month": 5,
+    "year": 2026,
+    "oldElec": 1354,
+    "newElec": 1615,
+    "oldWater": 56,
+    "newWater": 62,
+    "roomPrice": 3300000,
+    "elecAmount": 566769,
+    "waterAmount": 90000,
+    "serviceFee": 100000,
+    "totalAmount": 4056769,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-05-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0b3"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06e"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de062"
+    },
+    "month": 6,
+    "year": 2026,
+    "oldElec": 1615,
+    "newElec": 1715,
+    "oldWater": 62,
+    "newWater": 69,
+    "roomPrice": 3300000,
+    "elecAmount": 183600,
+    "waterAmount": 105000,
+    "serviceFee": 100000,
+    "totalAmount": 3688600,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-06-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0b4"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06e"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de062"
+    },
+    "month": 7,
+    "year": 2026,
+    "oldElec": 1715,
+    "newElec": 1834,
+    "oldWater": 69,
+    "newWater": 77,
+    "roomPrice": 3300000,
+    "elecAmount": 224773,
+    "waterAmount": 120000,
+    "serviceFee": 100000,
+    "totalAmount": 3744773,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-07-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0b5"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06e"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de062"
+    },
+    "month": 8,
+    "year": 2026,
+    "oldElec": 1834,
+    "newElec": 1972,
+    "oldWater": 77,
+    "newWater": 86,
+    "roomPrice": 3300000,
+    "elecAmount": 265946,
+    "waterAmount": 135000,
+    "serviceFee": 100000,
+    "totalAmount": 3800946,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-08-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0b6"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06e"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de062"
+    },
+    "month": 9,
+    "year": 2026,
+    "oldElec": 1972,
+    "newElec": 2129,
+    "oldWater": 86,
+    "newWater": 90,
+    "roomPrice": 3300000,
+    "elecAmount": 307119,
+    "waterAmount": 60000,
+    "serviceFee": 100000,
+    "totalAmount": 3767119,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-09-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0b7"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de06e"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de062"
+    },
+    "month": 10,
+    "year": 2026,
+    "oldElec": 2129,
+    "newElec": 2305,
+    "oldWater": 90,
+    "newWater": 95,
+    "roomPrice": 3300000,
+    "elecAmount": 348292,
+    "waterAmount": 75000,
+    "serviceFee": 100000,
+    "totalAmount": 3823292,
+    "status": "Chưa thanh toán",
+    "paidAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0b8"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de070"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de063"
+    },
+    "month": 1,
+    "year": 2026,
+    "oldElec": 600,
+    "newElec": 812,
+    "oldWater": 35,
+    "newWater": 44,
+    "roomPrice": 4200000,
+    "elecAmount": 433048,
+    "waterAmount": 135000,
+    "serviceFee": 100000,
+    "totalAmount": 4868048,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-01-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0b9"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de070"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de063"
+    },
+    "month": 2,
+    "year": 2026,
+    "oldElec": 812,
+    "newElec": 1043,
+    "oldWater": 44,
+    "newWater": 48,
+    "roomPrice": 4200000,
+    "elecAmount": 484899,
+    "waterAmount": 60000,
+    "serviceFee": 100000,
+    "totalAmount": 4844899,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-02-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0ba"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de070"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de063"
+    },
+    "month": 3,
+    "year": 2026,
+    "oldElec": 1043,
+    "newElec": 1293,
+    "oldWater": 48,
+    "newWater": 53,
+    "roomPrice": 4200000,
+    "elecAmount": 536750,
+    "waterAmount": 75000,
+    "serviceFee": 100000,
+    "totalAmount": 4911750,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-03-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0bb"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de070"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de063"
+    },
+    "month": 4,
+    "year": 2026,
+    "oldElec": 1293,
+    "newElec": 1382,
+    "oldWater": 53,
+    "newWater": 59,
+    "roomPrice": 4200000,
+    "elecAmount": 163074,
+    "waterAmount": 90000,
+    "serviceFee": 100000,
+    "totalAmount": 4553074,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-04-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0bc"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de070"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de063"
+    },
+    "month": 5,
+    "year": 2026,
+    "oldElec": 1382,
+    "newElec": 1490,
+    "oldWater": 59,
+    "newWater": 66,
+    "roomPrice": 4200000,
+    "elecAmount": 200936,
+    "waterAmount": 105000,
+    "serviceFee": 100000,
+    "totalAmount": 4605936,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-05-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0bd"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de070"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de063"
+    },
+    "month": 6,
+    "year": 2026,
+    "oldElec": 1490,
+    "newElec": 1617,
+    "oldWater": 66,
+    "newWater": 74,
+    "roomPrice": 4200000,
+    "elecAmount": 242109,
+    "waterAmount": 120000,
+    "serviceFee": 100000,
+    "totalAmount": 4662109,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-06-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0be"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de070"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de063"
+    },
+    "month": 7,
+    "year": 2026,
+    "oldElec": 1617,
+    "newElec": 1763,
+    "oldWater": 74,
+    "newWater": 83,
+    "roomPrice": 4200000,
+    "elecAmount": 283282,
+    "waterAmount": 135000,
+    "serviceFee": 100000,
+    "totalAmount": 4718282,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-07-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0bf"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de070"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de063"
+    },
+    "month": 8,
+    "year": 2026,
+    "oldElec": 1763,
+    "newElec": 1928,
+    "oldWater": 83,
+    "newWater": 87,
+    "roomPrice": 4200000,
+    "elecAmount": 324455,
+    "waterAmount": 60000,
+    "serviceFee": 100000,
+    "totalAmount": 4684455,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-08-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0c0"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de070"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de063"
+    },
+    "month": 9,
+    "year": 2026,
+    "oldElec": 1928,
+    "newElec": 2112,
+    "oldWater": 87,
+    "newWater": 92,
+    "roomPrice": 4200000,
+    "elecAmount": 365628,
+    "waterAmount": 75000,
+    "serviceFee": 100000,
+    "totalAmount": 4740628,
+    "status": "Đã thanh toán",
+    "paidAt": {
+      "$date": "2026-09-04T17:00:00Z"
+    },
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6af4a65bb59028512d2de0c1"
+    },
+    "room": {
+      "$oid": "6af4a65bb59028512d2de070"
+    },
+    "tenant": {
+      "$oid": "6af4a65ab59028512d2de063"
+    },
+    "month": 10,
+    "year": 2026,
+    "oldElec": 2112,
+    "newElec": 2315,
+    "oldWater": 92,
+    "newWater": 98,
+    "roomPrice": 4200000,
+    "elecAmount": 408487,
+    "waterAmount": 90000,
+    "serviceFee": 100000,
+    "totalAmount": 4798487,
+    "status": "Chưa thanh toán",
+    "paidAt": null,
+    "__v": 0,
+    "createdAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-11T17:31:07.057Z"
+    }
+  }
+]

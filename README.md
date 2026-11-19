@@ -9,15 +9,18 @@ Dự án Full-stack MERN quản lý nhà trọ tuân thủ 100% đặc tả kỹ
 
 ## HƯỚNG DẪN CHẠY DỰ ÁN NHANH
 
-### Bước 1: Cài đặt & Khởi tạo dữ liệu mẫu Backend
+### Bước 1: Cài đặt & Chạy Backend
 Mở Terminal thứ nhất:
 ```bash
 cd backend
 npm install
-npm run seed
 npm run dev
 ```
 - Server Backend chạy tại: `http://localhost:5000`
+- **Dữ liệu mẫu tự nạp:** lần đầu chạy, nếu DB chưa có phòng nào, server tự nạp ảnh phòng (`backend/data/images`, lưu thẳng vào MongoDB, xem qua `/api/images/<tên file>`) và dữ liệu nhà trọ (`backend/data/snapshot/*.json`). Không cần chạy seed.
+- DB đã có dữ liệu cũ mà muốn cập nhật theo bản trên GitHub: `npm run import-data` (ghi đè theo `_id`, không xóa bản ghi khác).
+- Sửa dữ liệu xong muốn chia sẻ cho nhóm: `npm run export-data` rồi commit thư mục `backend/data/snapshot`.
+- Muốn xóa sạch và tạo lại dữ liệu mẫu gốc: `npm run seed`.
 - Lệnh `npm run seed` sẽ tự động tạo sẵn:
   - **Tài khoản Chủ trọ (Admin):** `admin@nhatro.vn` / `password123`
   - **Tài khoản Người thuê P102 (Có hóa đơn nợ):** `huong@gmail.com` / `password123`

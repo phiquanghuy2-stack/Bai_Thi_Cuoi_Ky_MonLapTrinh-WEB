@@ -1,3 +1,5 @@
+import { getImageUrl } from '../api/axiosClient';
+
 export const ELECTRICITY_TIERS = [
   { tier: 1, label: 'Bậc 1 (0 - 50 kWh)', shortLabel: '0 - 50 kWh', limit: 50, price: 1806 },
   { tier: 2, label: 'Bậc 2 (51 - 100 kWh)', shortLabel: '51 - 100 kWh', limit: 50, price: 1866 },
@@ -10,20 +12,20 @@ export const ELECTRICITY_TIERS = [
 export const WATER_UNIT_PRICE = 15000;
 export const DEFAULT_SERVICE_FEE = 100000;
 
-// Bộ sưu tập ảnh kiến trúc nội thất căn hộ Studio cao cấp (Unsplash Architecture)
-// Tự động hiển thị theo từng mã phòng khi phòng chưa upload ảnh local
+// Bộ sưu tập ảnh nội thất căn hộ mẫu (lưu trong MongoDB, phục vụ qua /api/images/:name)
+// Tự động hiển thị theo từng mã phòng khi phòng chưa upload ảnh
 const LUXURY_ROOM_IMAGES = [
-  'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1000&q=85',
-  'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1000&q=85',
-  'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1000&q=85',
-  'https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1000&q=85',
-  'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=1000&q=85',
-  'https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=1000&q=85',
-  'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1000&q=85',
-  'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1000&q=85',
-  'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1000&q=85',
-  'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=85',
-];
+  '1522708323590-d24dbb6b0267',
+  '1502672260266-1c1ef2d93688',
+  '1560448204-e02f11c3d0e2',
+  '1493809842364-78817add7ffb',
+  '1536376072261-38c75010e6c9',
+  '1554995207-c18c203602cb',
+  '1598928506311-c55ded91a20c',
+  '1512918728675-ed5a9ecdebfd',
+  '1484154218962-a197022b5858',
+  '1505693416388-ac5ce068fe85',
+].map((id) => getImageUrl(`/api/images/${id}.jpg`));
 
 export const getRoomFallbackImage = (roomNumber = '') => {
   const hash = String(roomNumber)
